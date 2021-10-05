@@ -5,4 +5,4 @@ Front-end : HTML5, CSS3, Adobe Photoshop.
 Backend and functionality : Javascript, PHP.
 Databases : Relational(MY_SQL);
 Local Server Support :Xampp
-Additional Library or API or functions :- jqery (AJAX), JAVASCRIPT xhttpRequest, JavaScript HTML2Pdf Library.
+Additional functions :- jqery (AJAX), JAVASCRIPT xhttpRequest, JavaScript HTML2Pdf Library.
