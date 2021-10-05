@@ -1,0 +1,31 @@
+@font-face {
+  font-family: RockBoulder;
+  src: url(fonts/Monospace.ttf);
+}
+#MiddleBody
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2%;
+}
+#MiddleBody #CenterDiv
+{
+
+    box-shadow:0px 0px 10px 1px silver;
+    border-radius:10px;    
+    padding:3%;
+    color:gold;
+    font-family:RockBoulder;
+    text-shadow:2px 2px 1px  brown, 0 0 1px yellow ;
+    font-weight:bolder;
+    text-align:center;
+    line-height:5vw;
+    font-size:2vw;
+    background:linear-gradient(90deg,rgb(5 38 114 / 76%),#079ef5  )
+}
+
+#MiddleBody #CenterDiv Table tr th
+{
+ padding:5px 45px; 
+}

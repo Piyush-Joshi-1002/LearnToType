@@ -1,0 +1,233 @@
+
+#SignIN
+{
+	cursor:pointer;
+}
+#SignIN:hover
+{
+    background:rgba(44,4,33,0.6);
+}
+#SignUpDiv{
+	background:rgba(0,0,0,0.8);
+	width:100%;
+	height:100vh;
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+	justify-content:center;
+	align-items: center;
+	z-index:30;
+}
+#SignUpDiv #cancle
+{
+	position:absolute;
+	right:10%;
+	top:20px;
+	font-size:30px;
+	font-weight:600;
+	cursor: pointer;
+	color:lime;
+	z-index: 31;
+}
+#SignUpDiv  .login_form{
+	width: 350px;
+	height:450px;
+	border-radius:5px;
+	position: relative;
+	margin:6% auto;
+	background: #fff;
+	padding: 5px;
+	overflow: hidden;
+}
+#SignUpDiv  .button_box{
+	width:220px;
+	margin: 20px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+#SignUpDiv  .toggle_button{
+	padding: 10px 30px;
+	cursor: pointer;
+	background:transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+
+}
+#SignUpDiv  #btn{
+	top:0;
+	left:0;
+	position:absolute;
+	width:110px;
+	height:100%;
+	background: linear-gradient(to right,#ff105f,#ffad06);
+	border-radius: 30px;
+	transition: .5s;
+}
+#SignUpDiv  .get_input{
+	top:100px;
+	position:absolute;
+	width:280px;
+	transition: .5s;
+}
+#SignUpDiv  .input_field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top:0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+#SignUpDiv  .submit_button{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right,#ff105f,#ffad06);
+	border:0;
+	outline: none;
+	border-radius: 30px;
+}
+#SignUpDiv  .check_box{
+	margin: 30px 10px 30px 0;
+}
+#SignUpDiv  span{
+	color:#777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;;
+}
+#SignUpDiv  #signin{
+	left: 50px;
+}
+#UserName{
+	display: none;
+}
+#SignUpDiv  #signup{
+	left:450px;
+}
+
+#SignIN
+{
+	cursor:pointer;
+}
+#SignUpDiv{
+	background:rgba(0,0,0,0.8);
+	width:100%;
+	height:100vh;
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+	justify-content:center;
+	align-items: center;
+	z-index:30;
+}
+#SignUpDiv #cancle
+{
+	position:absolute;
+	right:10%;
+	top:20px;
+	font-size:30px;
+	font-weight:600;
+	cursor: pointer;
+	color:lime;
+	z-index: 31;
+}
+#SignUpDiv  .login_form{
+	width: 350px;
+	height:450px;
+	border-radius:5px;
+	position: relative;
+	margin:6% auto;
+	background: #fff;
+	padding: 5px;
+	overflow: hidden;
+}
+#SignUpDiv  .button_box{
+	width:220px;
+	margin: 20px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+#SignUpDiv  .toggle_button{
+	padding: 10px 30px;
+	cursor: pointer;
+	background:transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+
+}
+#SignUpDiv  #btn{
+	top:0;
+	left:0;
+	position:absolute;
+	width:110px;
+	height:100%;
+	background: linear-gradient(to right,#ff105f,#ffad06);
+	border-radius: 30px;
+	transition: .5s;
+}
+#SignUpDiv  .get_input{
+	top:100px;
+	position:absolute;
+	width:280px;
+	transition: .5s;
+}
+#SignUpDiv  .input_field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top:0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+#SignUpDiv  .submit_button{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right,#ff105f,#ffad06);
+	border:0;
+	outline: none;
+	border-radius: 30px;
+}
+#SignUpDiv  .check_box{
+	margin: 30px 10px 30px 0;
+}
+#SignUpDiv  span{
+	color:#777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;;
+}
+#SignUpDiv  #signin{
+	left: 50px;
+}
+#UserName{
+	display: none;
+	font-size:20px;
+}
+#SignUpDiv  #signup{
+	left:450px;
+}
+#signout
+{
+    width:20px;
+    height:20px;
+    overflow:hidden;
+    margin:-3px 10px;
+    cursor:pointer;
+}

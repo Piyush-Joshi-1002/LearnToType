@@ -1,0 +1,587 @@
+/*Code for Stop Scroll*/
+.stop-scrolling { 
+    height: 100%; 
+    overflow: hidden; 
+} 
+/*End Code*/
+/*Path for font library used in css*/
+@font-face
+{
+	 font-family: FontForTextArea;
+ 	 src: url(fonts/PTMono-Regular.ttf);
+}
+/*End of the path*/
+#body{
+   margin:0px;
+   min-height:100vh;
+   display:flex;
+   justify-content:center;
+   padding:30px ;
+   background:rgb(22, 28, 31);
+   align-items:center;
+}
+#MainBodySection
+{
+    position:relative;
+    width:85vw;
+    padding:10px 0;
+    min-height:90vh;
+    background:linear-gradient(90deg, rgba(0, 183, 255, 1), rgba(255, 72, 0,0.5));
+    border-radius:10px;
+    box-shadow:0px 0px 8px 6px gray;
+    overflow:hidden;
+    display:flex;
+    flex-Direction:column;
+}
+
+/*Css For Change Theme*/
+#bodyTheme1{
+   margin:0px;
+   min-height:100vh;
+   display:flex;
+   justify-content:center;
+   padding:30px ;
+   background:rgb(22, 28, 51);
+   align-items:center;
+}
+#Theme1
+{
+    position:relative;
+    width:85vw;
+    padding:10px 0;
+    min-height:90vh;
+    background:linear-gradient(90deg, rgba(0, 183, 255, 1), /*rgba(2, 12, 56, 0.8)*/ rgba(2, 12, 56,8));
+    border-radius:10px;
+    box-shadow:0px 0px 6px 3px silver;
+    overflow:hidden;
+    display:flex;
+    flex-Direction:column;
+}
+
+#bodyTheme2{
+   margin:0px;
+   min-height:100vh;
+   display:flex;
+   justify-content:center;
+   padding:30px ;
+   background:aliceblue;
+   align-items:center;
+}
+#Theme2
+{
+    position:relative;
+    width:85vw;
+    padding:10px 0;
+    min-height:90vh;
+   /*background:linear-gradient(90deg, rgba(0, 183, 255, 1), rgba(255, 72, 0,0.5));*/
+    background:linear-gradient(90deg, rgba(216, 183, 135, 0.8), rgba(60,48,42, 1));
+    border-radius:10px;
+    box-shadow:0px 0px 8px 6px gray;
+    overflow:hidden;
+    display:flex;
+    flex-Direction:column;
+}
+#bodyTheme3{
+   margin:0px;
+   min-height:100vh;
+   display:flex;
+   justify-content:center;
+   padding:30px ;
+   background:rgb(22, 28, 31);
+   align-items:center;
+}
+#Theme3
+{
+    position:relative;
+    width:85vw;
+    padding:10px 0;
+    min-height:90vh;
+    background:linear-gradient(90deg, rgba(0, 183, 255, 1), rgba(255, 72, 0,0.5));
+    border-radius:10px;
+    box-shadow:0px 0px 8px 6px gray;
+    overflow:hidden;
+    display:flex;
+    flex-Direction:column;
+}
+#bodyTheme4{
+   margin:0px;
+   min-height:100vh;
+   display:flex;
+   justify-content:center;
+   padding:30px ;
+   background:rgb(22, 28, 31);
+   align-items:center;
+}
+#Theme4
+{
+    position:relative;
+    width:85vw;
+    padding:10px 0;
+    min-height:90vh;
+    background:linear-gradient(90deg,rgba(230,187,173,0.5), rgba(60,48,42, 1));
+    border-radius:10px;
+    box-shadow:0px 0px 6px 3px silver;
+    overflow:hidden;
+    display:flex;
+    flex-Direction:column;
+}
+#bodyTheme5{
+   margin:0px;
+   min-height:100vh;
+   display:flex;
+   justify-content:center;
+   padding:30px ;
+   background:rgb(22, 28, 31);
+   align-items:center;
+}
+#Theme5
+{
+    position:relative;
+    width:85vw;
+    padding:10px 0;
+    min-height:90vh;
+    background:linear-gradient(90deg,rgba(173,216,230,0.6), rgb(230,187,173,0.5));
+    border-radius:10px;
+    box-shadow:0px 0px 6px 3px silver;
+    overflow:hidden;
+    display:flex;
+    flex-Direction:column;
+}
+/*End Css for Change Theme*/
+
+ /*Css Style for header*/  
+ #header
+{
+    position:relative;
+    width:95%;
+    display:flex;
+    margin:0 0.7% ;
+    padding:0px 20px ;
+    justify-content:space-between;
+    background:rgb();
+    align-items:center;
+    height:70px;
+    color:white;
+    background:rgba(104,4,33,0.4);
+
+}
+ #header:hover
+{
+    background:rgba(100,4,33,0.6);
+}
+#header #Options
+{
+    width:60%;
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+}
+#header #Options ul
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    list-style:none;
+
+}
+#header #Options ul li {
+  position:relative;
+  cursor:pointer;
+  justify-content:space-around;
+  padding:10px 10px;
+  margin:5px 2px;
+  transition:all 0.8s;
+}
+#header #Options ul li:hover {
+    background:rgba(0,0,0,1);
+    border-radius:30px;
+  
+}
+#header #Options ul.drop-menu 
+{
+    background:rgba(100,100,100,0.6);
+    z-index:20;
+   
+  
+}
+#header #Options ul.drop-menu li {
+    display: none;
+    list-style: none;
+    border-bottom:1px solid aliceblue;
+}
+ #header #Options ul li:hover>ul.drop-menu li {
+    display: flex;
+    margin-left:-30px ;
+    background:none;
+    flex-Direction:column;
+    justify-content:start;
+    align-items:center;
+    cursor:pointer;
+}
+ #header #Options ul li>ul.drop-menu {
+    position: absolute;
+    display: flex;
+    flex-Direction:column;
+    left: 0;
+    top: 100%;
+    width:auto;
+}
+/*#MainBodySection #header #Options .Options
+{
+    cursor:pointer;
+    display:block;
+    padding:8px 20px;
+    transition:all 0.7s;
+}
+#MainBodySection #header #Options .Options:hover
+{
+    background:rgba(0,0,0,1);
+    border-radius:30px;
+}*/
+ /* End Css Style for header*/  
+/*Css style for Middle Area */
+ #TypingArea {
+     display:flex;
+     margin:20px;
+     text-align:center;
+     justify-content:center;
+     flex-Direction:column;
+     color:white;
+     font-size:30px;
+     text-shadow:4px 1px 2px rgba(82, 56, 4);;
+     font-variant: small-caps;
+     
+ }
+  #TypingArea #TestHeader{
+        background:rgba(0,0,30,0.3);
+        position:relative;
+        width:80%;
+        height:auto;
+        margin:20px 10%;
+        box-shadow:0 0 20px 2px black;;
+        border-radius:20px;
+        padding:20px;
+  }
+  #TypingArea #TestHeader #UserEfforts
+  {
+    padding: 10px 10px;
+     display:flex;
+     flex-direction:row;
+     justify-content:space-around;
+     font-size:20px;
+  }
+
+  #TypingArea #TestHeader #UserEfforts .Data
+  {
+    padding:5px;
+    font-size:30px;
+  }
+  #TypingArea #TestHeader #TestArea
+  {
+      background:aliceblue;
+      border-radius:20px;
+      box-shadow:0 0 0 5px green;
+      font-family: FontForTextArea;
+      margin:2% 4%;
+      width:90%;
+      height:60%;
+      outline:none;
+      overflow:auto;
+      color:black;
+      text-shadow:none;
+      font-size:30px;
+      text-align:left;
+      padding:5px 10px;
+      font-variant: none;
+      line-height:130%;
+  }
+  #TypingArea #TestHeader  #reset button
+  {
+    width:11%;
+    height:32px;
+    border-radius:5px;
+    box-shadow:inset 1px 2px 5px  white ;
+    border:none;
+    font-size:20px;
+    font-weight:550;
+    text-shadow:0px 0px 8px aliceblue;
+    color:rgba(0,0,0,0.8);
+    cursor:pointer;
+    background: linear-gradient(360deg, #FD6F46 10%, #FB9832 100%);
+  }
+  #TypingArea #TestHeader  #reset button:hover
+  {
+    box-shadow:inset 1px 2px 50px rgba(0,0,0,0.1), inset -1px -1px 1px  white ;
+     
+  }
+  #TypingArea #TestHeader  #testResult
+  {
+    overflow:hidden;
+    border-radius:10px;
+    background: linear-gradient(360deg, #FD6F46 10%, #FB9832 )  ;
+    margin:2% 8% ;
+    padding:5px;
+    display: none;
+    transition:all 0.3s;
+  }
+  #TypingArea #TestHeader  #testResult .testResult 
+  {
+    position:relative;
+    padding:2%;
+    border-radius:8px;
+    background:linear-gradient(90deg, rgba(0, 183, 255, 0.6), rgba(125, 172, 170, 0.7) 150%),black;
+    ;
+  }
+  #TypingArea #TestHeader  #testResult .testResult .content
+  { 
+    padding:2% 15%;
+    line-height:35px;
+    text-align:left;
+    font-size:25px;
+    border-radius:8px;
+    background:linear-gradient(90deg, rgba(0, 183, 255, 0.6), rgba(125, 172, 170, 0.7) 150%),black;
+    
+  }
+  #fingurHelp
+  {
+    display:none;
+    height:20vw;
+    width:100%;
+    justify-content:center;
+  }
+  #fingurHelp #imageDivLeft, #imageDivRight
+  {
+    width:10.5vw;
+    height:15vw;
+  }
+  #ControlsAndDetails
+  {
+      margin:5% 0%;
+      background: rgb(63,63,63);
+      color:white;
+      display:flex;
+      justify-content:center;
+  }
+  #ControlsAndDetails select
+  {
+    width:80%;
+    height:35px;
+    margin:2%;
+    font-size:20px;
+    background:linear-gradient(360deg, #FD6F46 10%, #FB9832 );
+    cursor:pointer;
+    border-radius:10px;
+    font-weight:550;
+    color:aliceblue;
+    text-align:center;
+    text-shadow:0 0 10px rgba(0,0,0,0.5)
+  }
+
+  #ControlsAndDetails select option
+  {
+    color:black;
+    background:aliceblue;
+  }
+  #ForAlignCenter
+  {
+    text-align:center;
+    min-width:300px;
+    padding:5%;
+    margin:2%;
+    border-radius:30px;
+    box-shadow:0px 6px 5px 4px black;; 
+  }
+  #ControlsAndDetails #FingerChqBox 
+  {
+      
+     color:white;
+     font-size:25px;
+     text-shadow:0px 0px 1px lime;
+     font-variant: small-caps;
+      
+  }
+.LetterToType
+{
+  overflow: hidden;
+  display: inline-block;
+  width:20px;
+  margin:0%;
+  padding: 0%;
+  min-height: 35px;
+  color:gray;
+  font-weight:700;
+}
+
+.Lines{
+  width:93%;
+  margin:0.8% 3%;
+}
+#MiddleBody .button
+{
+    cursor:pointer;
+    width:16vw;
+    height:3vw;
+	background: linear-gradient(to right,#ff105f,#ffad06aa);
+    margin:12px auto;
+    border-radius:50px;
+    font-size:1.6vw;
+    text-align:center;
+    color:white;
+    font-weight:800;
+    text-shadow:none;
+    padding-top:0.75vw;
+}   
+#MiddleBody .button:hover
+{
+
+	background: linear-gradient(to right,#ff105f,#ffad06);
+	box-shadow:0px 0px 15px 1px lightblue;
+}
+
+/*Css style for Middle Area */
+/* Css style For  Footer*/
+
+#footerSection
+{
+   margin-top:auto;
+   margin-bottom:-10px; 
+   width:104%;
+   margin-left:-10px;
+   height:300px;   /* Height of the footer */
+   background:linear-gradient(90deg, rgba(20, 18, 25, 0.8), rgba(25, 9, 0, 0.5)),url(Image/Caribbean-beach.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size:cover;
+   color:white;
+}
+
+#footerSection #footer{
+  display:flex;
+  justify-content:space-around;
+}
+#footerSection #footer input[type="text"]
+{
+  border:none;
+  border-radius:20px;
+  padding:8px 10px ;
+  text-align :center;
+  background:rgb(0,0,0,0.3);
+  box-shadow: -1px -1px 1px white inset;
+  color:white;  
+  outline:none;
+}
+#footerSection #footer input[type="text"]:hover
+{
+  border:none;
+  border-radius:20px;
+  padding:8px 10px ;
+  text-align :center;
+  background:rgb(0,0,0,0.6);
+  box-shadow: 1px 1px 1px white inset, 
+  color:white;  
+}
+
+#footerSection #footer input[type="button"]
+{
+  margin:20px 0px;
+  padding:5px 25px;
+  border:none;
+  box-shadow: 1px 1px 2px aliceblue, 
+            1px 1px 2px aliceblue;
+  cursor:pointer;
+  color:aliceblue;
+  border-radius:20px;
+  background:rgb(29,45,71)
+}
+#footerSection #footer input[type="button"]:hover
+{
+  box-shadow: -1px -1px 2px aliceblue inset, 
+            1px 1px 2px aliceblue inset;
+  
+}
+/* End Css style For  Footer*/
+/*Code  For Responcive */
+@media screen and (max-width: 800px) {
+
+      body{
+         margin:0px;
+         min-height:100vh;
+         padding:0px;
+      }
+      #MainBodySection
+      {
+          width:100%;
+      }
+      #Theme1
+      {
+          width:100%;
+      }
+      #Theme2
+      {
+          width:100%;
+      }
+      #Theme3
+      {
+          width:100%;
+      }
+      #Theme4
+      {
+          width:100%;
+      }
+      #Theme5
+      {
+          width:100%;
+      }
+   #TypingArea {
+     display:flex;
+     margin:20px;
+     color:white;
+     font-size:20px;
+     text-shadow:1px 1px 2px lime;
+     font-variant: small-caps;
+     
+ }
+  #TypingArea #TestHeader{
+        width:100%;
+        height:55vw;
+        margin:20px 0%;
+  }
+  #TypingArea #TestHeader #UserEfforts
+  {
+    padding: 10px 10px;
+     display:flex;
+     flex-direction:row;
+     justify-content:space-around;
+     font-size:15px;
+  }
+
+  #TypingArea #TestHeader #UserEfforts .Data
+  {
+    padding:5px;
+    font-size:20px;
+  }
+  #TypingArea #TestHeader #TestArea
+  {
+      width:88%;
+      height:60%;
+      font-size:20px;
+      line-height:115%;
+  }
+  
+  .LetterToType
+  {
+    width:14px;
+    min-height:22px;
+
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+/*Code  For Responcive */
+
+
+
+

@@ -1,0 +1,71 @@
+#MiddleBody
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2%;
+}
+#MiddleBody #CenterDiv
+{
+
+    box-shadow:0px 0px 10px 1px black;
+    
+    padding:3%;
+}
+#MiddleBody #Certification
+{
+    background: url(Image/3910.jpg);
+    background-size: 100% 100%;
+    width: 40vw;
+    height: 51vw;
+    position:relative;
+}
+
+#MiddleBody #Certification #Name
+{
+    position:absolute;
+    top:41%; left:40%;
+    transform:translateX(-50%);
+    z-index:20;
+    font-size:2vw;
+}
+#MiddleBody #Certification #UserProgress
+{
+    position:absolute;
+    left:13%;
+    top:52%;
+    width:60%;
+    font-size:1vw;
+}
+#MiddleBody #Certification #UserProgress p, .heading
+{
+    font-weight:1000;
+    color:burlywood;
+}
+
+#MiddleBody #Certification td
+{
+    font-weight:550;
+    color:brown;   
+}
+
+#MiddleBody .button
+{
+    cursor:pointer;
+    width:10vw;
+    height:1.5vw;
+	background: linear-gradient(to right,#ff105fbb,#ffad06aa);
+    margin:12px auto;
+    border-radius:20px;
+    font-size:1.15vw;
+    text-align:center;
+    padding:0.5vw;
+    color:white;
+    font-weight:800;
+}   
+#MiddleBody .button:hover
+{
+
+	background: linear-gradient(to right,#ff105f,#ffad06);
+	box-shadow:0px 0px 15px 1px lightblue;
+}

@@ -1,0 +1,40 @@
+.keyboard{
+  position:relative;
+  display:block;
+  width:49vw; height: 14vw;
+  background-color: none;
+  margin: 0px auto;
+  border-radius: 9px;
+  padding: 1%;
+  color:aliceblue;
+  font-weight:800;
+  margin:0px 2vw;
+  border:5px double gray;
+}
+
+.key{
+  width: 7%; height:18%;
+  background-color:rgba(0,0,0,0.5);
+  text-align: left;
+  padding-left: 1%;
+  line-height: 230%;
+  border:0.5px solid lime;
+  border-radius:2px;
+  float:left; margin-left: 0.32%;
+  margin-bottom: 0.32%;
+  cursor: pointer;
+  transition: box-shadow 0.7s ease;
+  font-size:14px;
+}
+
+.dual {font-size: 12px; line-height: 150%; width:4.7%; }
+.backspace {width:15.1%; font-size: 14px; line-height:250%;}
+.tab {width: 9%; line-height: 300%; font-size:13px;}
+.letter{width:4.9%; font-size:14px;}
+.slash{width:9%;}
+.caps{width:11%; font-size:9px; line-height:150%;}
+.enter{width:14.5%; line-height:260%; text-align: center; padding-left:0;}
+.shift.left{width: 15.2%;line-height: 260%; font-size:12px;}
+.shift.right{width: 16%;line-height: 260%; font-size:12px;}
+.ctrl{width: 9%; line-height: 260%; font-size:12px;}
+.space{width:33%;}
